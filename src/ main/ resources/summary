@@ -42,6 +42,10 @@ INSERT INTO Author(id,name,surname,email,password)
 VALUES(1,'Aizhan','Arapova','aizhan@gmail.com','456');
 select*from author
 
+INSERT INTO book_type(id,name,description)
+VALUES(1,'JAVA',''),
+VALUES(2,'Бизнес','');
+
 INSERT INTO Book(id,publish_date,quantity,title,image,type)
 VALUES(2,sysdate(),265,'Дизайн карьеры и жизни','books2.jpg',2),
 VALUES(3,sysdate(),25,'Java for absolute beginners','java.jpg',1),
