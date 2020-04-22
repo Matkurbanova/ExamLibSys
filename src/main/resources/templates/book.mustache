@@ -1,0 +1,60 @@
+
+{{>header}}
+
+
+{{>navigation}}
+/<!--<body style="background-color:#212529;">-->
+</body>
+    <div align="center">
+
+<a class="btn btn-secondary" href="/book/all books" role="button">Все книги</a>
+<a class="btn btn-secondary" href="/book/java" role="button">JAVA</a>
+<a class="btn btn-secondary" href="/book/business" role="button">Бизнес</a>
+<!--<a class="btn btn-secondary" href="/menu/soups" role="button">Супы</a>-->
+<!--<a class="btn btn-secondary" href="/menu/pizza" role="button">Пицца</a>-->
+<!--<a class="btn btn-secondary" href="/menu/meat dishes" role="button">Блюды из мяса</a>-->
+<!--<a class="btn btn-secondary" href="/menu/seafood dishes" role="button">Блюда из морепродуктов</a>-->
+<!--<a class="btn btn-secondary" href="/menu/fast food" role="button">Фасфуд</a>-->
+<!--<a class="btn btn-secondary" href="/menu/dessert" role="button">Десерт</a>-->
+<!--<a class="btn btn-secondary" href="/menu/National cuisine" role="button">Национальная кухня</a>-->
+<!--<a class="btn btn-secondary" href="/menu/the drinks" role="button">Напитки</a>-->
+
+
+
+<h2 class="title" style="font-weight:normal">
+    {{#bookTitle}}
+        {{bookTitle}}
+    {{/bookTitle}}
+</h2>
+
+
+
+<div class="row">
+
+
+    {{#book}}
+
+
+        <div class="card" style="width: 18rem;margin-left:2rem ; margin-top:2rem">
+<!--            <img src="/images/{{image}}" class="card-img-top" style="height: 200px" >-->
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text">{{publish_date}}</p>
+                <p class="card-text"> Количество: {{quantity }}</p>
+
+
+
+                <a href="#" class="btn btn-primary" onclick="addToCart({{id}})">Add to card</a>
+            </div>
+        </div>
+
+
+
+
+
+    {{/book}}
+</div>
+</div>
+
+</body>
+</html>
