@@ -10,16 +10,6 @@ email: bermet@gmail.com
  закинула как image.png. Можете оттуда посмотреть.
 
 
-email: bermet@gmail.com
-пароль: 123
-
-Я закинула проект в Heroku. Но там не заходит. 
-Ввожу правильно логин и пароль, а пишет не верный логин 
-и пароль.
-Но сам проект работет. Я сделала скрин проекта и
- закинула как image.png. Можете оттуда посмотреть.
-
-
 Create TABLE Author
 (
  id int not null auto_increment primary key,
